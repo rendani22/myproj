@@ -1,0 +1,768 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Survey2</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" clear><ion-icon name="person"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!---->
+  <ion-card>
+    <ion-card-header color="primary">
+      Personal Information
+    </ion-card-header>
+    <ion-card-content>
+
+        <ion-list>
+
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="fname" placeholder="First Name"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+          <ion-list>
+        
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="secname" placeholder="Second Name"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+          <ion-list>
+            
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="Sname" placeholder="Surname"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+          <ion-list>
+            
+            <ion-item>
+              <ion-input type="tel" [(ngModel)]="Cnum1" placeholder="Cellphone Number"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+          <ion-list>
+            
+            <ion-item>
+              <ion-input type="tel" [(ngModel)]="Cnum2" placeholder="Cellphone Number 2"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+          <ion-list>
+            
+            <ion-item>
+              <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+<!---->
+  <ion-card>
+    <ion-card-content>
+      
+      <ion-list>
+        <ion-item>
+          <ion-label>Gender</ion-label>
+          <ion-select placeholder="Select one">
+            <ion-select-option [(ngModel)]="male" value="m">Male</ion-select-option>
+            <ion-select-option [(ngModel)]="female" value="f">Female</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+    <ion-list>
+      
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="age" placeholder="Age"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+    <ion-list>
+      
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="city" placeholder="City"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+    <ion-list>
+      
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="province" placeholder="Province"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+<!---->
+      
+        <ion-list>
+          
+            <!-- Input social media here -->
+        
+        
+            <!-- Input social media here -->
+        
+          </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+<!---->
+  <ion-card>
+    <ion-card-content>
+      
+        <ion-list>
+
+            <ion-item>
+              <ion-label>TYPE OF HOME STRUCTURE</ion-label>
+              <ion-select placeholder="Select one">
+                <ion-select-option [(ngModel)]="THS-informal" value="INFORMAL">INFORMAL</ion-select-option>
+                <ion-select-option [(ngModel)]="THS-flat" value="FLAT">FLAT</ion-select-option>
+                <ion-select-option [(ngModel)]="THS-thouse" value="TOWNHOUSE">TOWNHOUSE</ion-select-option>
+                <ion-select-option [(ngModel)]="THS-farm" value="FARM">FARM</ion-select-option>
+              </ion-select>
+            </ion-item>
+        
+          </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+<!---->
+  <ion-card>
+    <ion-card-content>
+      
+        <ion-list>
+
+            <ion-item>
+              <ion-label>HOUSEHOLD INCOME PER MONTH</ion-label>
+              <ion-select placeholder="Select one">
+                <ion-select-option [(ngModel)]="HPM-7" value="0-7000">0-7000</ion-select-option>
+                <ion-select-option [(ngModel)]="HPM-14" value="7000-14999">7000-14999</ion-select-option>
+                <ion-select-option [(ngModel)]="HPM-20" value="15000-20000">15000-20000</ion-select-option>
+                <ion-select-option [(ngModel)]="HPM-25" value="20000-25000">20000-25000</ion-select-option>
+                <ion-select-option [(ngModel)]="HPM-30" value="25000-30000">25000-30000</ion-select-option>
+                <ion-select-option [(ngModel)]="HPM-30+" value="30000+">30000+</ion-select-option>
+              </ion-select>
+            </ion-item>
+        
+          </ion-list>
+          
+    </ion-card-content>
+  </ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>EMPLOYMENT STATUS</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="ES-Stud" value="STUDENT">STUDENT</ion-select-option>
+              <ion-select-option [(ngModel)]="ES-Emp" value="EMPLOYED">EMPLOYED</ion-select-option>
+              <ion-select-option [(ngModel)]="ES-UBL" value="UNEMPLOYED BUT LOOKING">UNEMPLOYED BUT LOOKING</ion-select-option>
+              <ion-select-option [(ngModel)]="ES-UBNL" value="UNEMPLOYED BUT NO LONGER LOOKING">UNEMPLOYED BUT NO LONGER LOOKING</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="ISschool" placeholder="If Student School"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>HIGHEST EDUCATION</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="HE-8" value="GRADE 8">GRADE 8</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-9" value="GRADE 9">GRADE 9</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-10" value="GRADE 10">GRADE 10</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-11" value="GRADE 11">GRADE 11</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-mat" value="MATRIC">MATRIC</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-cert" value="CERTIFICATE NQF4">CERTIFICATE NQF4</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-dip" value="DIPLOMA NQF5">DIPLOMA NQF5</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-deg" value="DEGREE NQF6">DEGREE NQF6</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-hon" value="HONS NQF7">HONS NQF7</ion-select-option>
+              <ion-select-option [(ngModel)]="HE-plus" value="NQF8 PLUS">NQF8 PLUS</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          MY FAMILY HAS MEDICAL A[(ngModel)]
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="MFMA-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="MFMA-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+      <ion-list>
+
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Cchoice1" placeholder="CAREER CHOICE 1"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+        <ion-list>
+      
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Cchoice2" placeholder="CAREER CHOICE 2"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+        <ion-list>
+          
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Cchoice3" placeholder="CAREER CHOICE 3"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+        <ion-list>
+          
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Rmodel" placeholder="ROLE MODEL"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU HAVE A BANK ACCOUNT?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="DHBA-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="DHBA-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>PRIMARY BANKERS</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="PB-none" value="NONE">NONE</ion-select-option>
+              <ion-select-option [(ngModel)]="PB-absa" value="ABSA">ABSA</ion-select-option>
+              <ion-select-option [(ngModel)]="PB-capitec" value="CAPITECH">CAPITEC</ion-select-option>
+              <ion-select-option [(ngModel)]="PB-fnb" value="FNB">FNB</ion-select-option>
+              <ion-select-option [(ngModel)]="PB-nedbank" value="NEDBANK">NEDBANK</ion-select-option>
+              <ion-select-option [(ngModel)]="PB-standard" value="STANDARD BANK">STANDARD BANK</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>INSURANCE POLICY</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="IP-none" value="NONE">NONE</ion-select-option>
+              <ion-select-option [(ngModel)]="IP-disc" value="DISCOVERY">DISCOVERY</ion-select-option>
+              <ion-select-option [(ngModel)]="IP-sanl" value="SANLAM">SANLAM</ion-select-option>
+              <ion-select-option [(ngModel)]="IP-libe" value="LIBERTY">LIBERTY</ion-select-option>
+              <ion-select-option [(ngModel)]="IP-momen" value="MOMENTUM">MOMENTUM</ion-select-option>
+              <ion-select-option [(ngModel)]="IP-avbob" value="AVBOB">AVBOB</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          CAN YOU NAME THREE SETAS?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="CNTS-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="CNTS-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+      <ion-list>
+
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="TSTIM" placeholder="THREE SETAS THAT INTEREST ME?"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          WOULD YOU LIKE TO LEARN MORE ABOUT LEARNERSHIPS?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="Learner-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="Learner-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          WOULD YOU LIKE TO LEARN MORE ABOUT JOB PLACEMENTS?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="PLACE-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="PLACE-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          WOULD YOU LIKE TO LEARN MORE ABOUT BURSARIES?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="BURSA-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="BURSA-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU BELIEVE YOU WILL GET YOUR DREAM JOB?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="DJ-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="DJ-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU BELIEVE YOU KNOW ENOUGH ABOUT MANAGING YOUR MONEY?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="MM-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="MM-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU BELIEVE YOU KNOW ABOUT DEBT?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="debt-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="debt-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>WHICH IS MORE IMPORTANT TO YOU?</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="WMIY-car" value="NICE CAR">NICE CAR</ion-select-option>
+              <ion-select-option [(ngModel)]="WMIY-house" value="NICE HOUSE">NICE HOUSE</ion-select-option>
+              <ion-select-option [(ngModel)]="WMIY-clothes" value="NICE CLOTHES">NICE CLOTHES</ion-select-option>
+              <ion-select-option [(ngModel)]="WMIY-saving" value="LARGE SAVINGS">LARGE SAVINGS</ion-select-option>
+              <ion-select-option [(ngModel)]="WMIY-hol[(ngModel)]ays" value="HOL[(ngModel)]AYS">HOL[(ngModel)]AYS</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU KNOW WHAT AN OMBUDSMAN DOES?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="OMB-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="OMB-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>I PREFER TO GET MY INFORMATION</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="minfo-PB" value="PRINTED BROCHURE">PRINTED BROCHURE</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-Web" value="WEBSITE">WEBSITE</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-PA" value="PHONE APPLICATION">PHONE APPLICATION</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-tele" value="TELEVISION">TELEVISION</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-audio" value="AUDIOBOOK">AUDIOBOOK</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-radio" value="RADIO">RADIO</ion-select-option>
+              <ion-select-option [(ngModel)]="minfo-news" value="NEWSPAPER">NEWSPAPER</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>NUMBER OF PEOPLE IN YOUR HOUSEHOLD</ion-label>
+            <ion-select placeholder="Select one">
+              <ion-select-option [(ngModel)]="numHH-2" value="2">2</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-3" value="3">3</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-4" value="4">4</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-5" value="5">5</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-6" value="6">6</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-7" value="7">7</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-8" value="8">8</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-9" value="9">9</ion-select-option>
+              <ion-select-option [(ngModel)]="numHH-10" value="10">10</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+        </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          TYPE OF MATHEMATICS YOU STUDIED?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>MATHEMATICS</ion-label>
+          <ion-radio [(ngModel)]="math-pmath" value="PMATH"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>MATHEMATICS LITRACY</ion-label>
+          <ion-radio [(ngModel)]="math-mathlit" value="MATHLIT"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          HAVE YOU EVER HAD A JOB?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="hadJob-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="hadJob-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU HAVE A DRIVERS LICENSE?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="DL-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="DL-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          ARE YOU A SOUTH AFRICAN CITIZEN?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="SACit-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="SACit-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          ARE YOU WILLING TO RE-LOCATE TO ANOTHER PROVINCE TO STUDY OR WORK?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="relocate-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="relocate-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-card-content>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          DO YOU OWN A SMARTPHONE?
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio [(ngModel)]="SP-yes" value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio [(ngModel)]="SP-no" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
+<!---->
+
+<!---->
+
+</ion-content>
